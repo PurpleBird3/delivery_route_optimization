@@ -10,9 +10,19 @@ The `main` branch serves as the base setup of the application.It contains:
 - An overview of the system.
 
 ## Features
-- Shortest path delivery routing
-- Load delivery orders and trucks from CSV files
-- Assign orders based on distance and truck capacity
+- Shortest path delivery routing.
+- Load delivery orders and trucks from CSV files.
+- Assign orders based on distance and truck capacity.
+- Includes negative edge weights to simulate returned packages.
+
+## Dataset Overview
+This project uses a realistic delivery network of 50 addresses and 100 delivery orders.
+
+The dataset includes:
+- A weighted graph with distances and traffic delays
+- Occasional **negative edge weights** to simulate returns or rerouting (e.g., refund trips, misdeliveries)
+
+These features are designed to test both algorithm performance and correctness under real-world conditions.
 
 ## Files in This Branch 
 - `main.py`: Entry point for testing data loading and structure.
