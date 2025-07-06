@@ -1,28 +1,22 @@
-# Delivery Dispatch System (Dijkstra-Based)
+# Delivery Route Optimization (Bellman-Ford Branch)
 
-This project simulates a package delivery dispatch system using Dijkstra's algorithm to determine the shortest delivery routes.
+This branch implements the Bellman-Ford Algorithm for route optimization in a simulated delivery system.
 
-## Features
+## Algorithm Used
+- **Bellman-Ford Algorithm**: A dynamic programming algorithm that finds the shortest paths even when negative weights are present (not typical in delivery networks, but useful for learning and comparison).
 
-- Shortest path delivery routing
-- Load delivery orders and trucks from CSV files
-- Assign orders based on distance and truck capacity
+## Functionality
+- Loads graph data from `delivery_network.csv`
+- Dispatches vehicles from `delivery_vehicles.csv`
+- Assigns each order based on the shortest path calculated by Bellman-Ford
+- Measures and prints path, cost, and execution time
 
-## Folder Structure
-│
-├── data/
-│ ├── delivery_network.csv
-│ ├── delivery_orders.csv
-│ └── delivery_vehicles.csv
-│
-├── logs/
-│ └── delivery_log.csv (auto-generated)
-│
-├── graph.py
-├── dijkstra.py
-├── delivery.py
-├── main.py
-├── README.md
-└── .gitignore
+## Files in This Branch
+- `bellman_ford.py`: Core Bellman-Ford implementation
+- `main.py`: Simulation runner and timing tracker
+- CSV Files:
+  - `delivery_network.csv`
+  - `delivery_orders.csv`
+  - `delivery_vehicles.csv`
 
-
+## Timing Test
