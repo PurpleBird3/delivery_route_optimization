@@ -7,11 +7,12 @@ This branch implements Dijkstra’s Algorithm for route optimization in a simula
 To demonstrate shortest path routing using the Dijkstra algorithm in a delivery context. This branch runs independently of the main and Bellman-Ford branches.
 
 ## Features
-
 - Implements Dijkstra’s Algorithm for shortest path routing
 - Loads delivery network, orders, and trucks from CSV files
 - Assigns delivery orders based on travel time and availability
 - Measures algorithm runtime in milliseconds
+- `Note`: Dijkstra's algorithm assumes all edge weights are non-negative.  
+  The algorithm may miss shorter paths or produce suboptimal results because it does not account for reductions in total cost.
 
 ## Files in This Branch
 - `dijkstra.py`: Implements the core Dijkstra algorithm
