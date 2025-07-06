@@ -11,6 +11,12 @@ This branch implements the Bellman-Ford Algorithm for route optimization in a si
 - Assigns each order based on the shortest path calculated by Bellman-Ford
 - Measures and prints path, cost, and execution time
 
+## Features
+- Implements Bellman-Ford Algorithm for route optimization
+- Supports negative edge weights for experimentation
+- Loads input data from CSV files
+- Includes performance timing and path output
+
 ## Files in This Branch
 - `bellman_ford.py`: Core Bellman-Ford implementation
 - `main.py`: Simulation runner and timing tracker
