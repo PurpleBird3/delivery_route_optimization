@@ -7,4 +7,4 @@ env/
 venv/
 .idea/
 logs/
-delivery_log.csv
+delivery_log.csv.DS_Store
